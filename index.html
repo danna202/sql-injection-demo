@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL-Injection-Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/login" method="POST">
+        <label for="username"><h3>Username</h3></label>
+        <input 
+            type="text" 
+            name="username" 
+            placeholder="Enter Username"
+            required
+        >
+        <br>
+        <label for="password"><h3>Password</h3></label>
+        <input 
+            type="password" 
+            name="password" 
+            placeholder="Enter Password"
+            required
+        >
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+    //     if (document.location.hash === '#unauthorized') {
+    //         document.write('div class = "Unauthorized">Invalid Username or Password</div');
+    //     } else if (document.location.hash === '#error') {
+    //         document.write('div class = "error">An Error has occured</div');
+            
+    //     }
+    //     Password</div>');
+    //         else if(document.location.hash === '#error') {
+    //     document.write('<div class="error">An error has occured</div>');
+    // }
+    if(document.location.hash === '#unauthorized') {
+        document.write('<div class="unauthorized">Invalid Username or Password</div>');
+    } else if(document.location.hash === '#error') {
+        document.write('<div class="error">An error has occured</div>');
+    }
+    </script>
+</body>
+</html>
